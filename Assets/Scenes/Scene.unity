@@ -3490,13 +3490,13 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530153862}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
+
 --- !u!4 &555009284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8906456345036582962, guid: 86fae05d9b37245f887cb268eb6818ee, type: 3}
   m_PrefabInstance: {fileID: 363652953}
   m_PrefabAsset: {fileID: 0}
-=======
+
 --- !u!1 &540704018 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
@@ -3543,7 +3543,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
->>>>>>> e3d8d1191e2c46da64b89d9e42dbdc5292088202
+
 --- !u!1 &569510989
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,7 +4763,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728008893}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
+
 --- !u!4 &740108512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8906456345036582962, guid: 86fae05d9b37245f887cb268eb6818ee, type: 3}
@@ -4990,8 +4990,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758401107}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-=======
->>>>>>> e3d8d1191e2c46da64b89d9e42dbdc5292088202
+
+
 --- !u!1 &763629978
 GameObject:
   m_ObjectHideFlags: 0
@@ -11807,16 +11807,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927204892}
   m_CullTransparentMesh: 1
-<<<<<<< HEAD
+
 --- !u!1001 &1952770816
-=======
+
 --- !u!1001 &1953122067
->>>>>>> e3d8d1191e2c46da64b89d9e42dbdc5292088202
+
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-<<<<<<< HEAD
+
     m_TransformParent: {fileID: 1070118611}
     m_Modifications:
     - target: {fileID: 8906456345036352530, guid: 86fae05d9b37245f887cb268eb6818ee, type: 3}
@@ -11881,7 +11881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86fae05d9b37245f887cb268eb6818ee, type: 3}
-=======
+
     m_TransformParent: {fileID: 1440896351}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
@@ -11951,7 +11951,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
   m_PrefabInstance: {fileID: 1953122067}
   m_PrefabAsset: {fileID: 0}
->>>>>>> e3d8d1191e2c46da64b89d9e42dbdc5292088202
+
 --- !u!1 &1966654673
 GameObject:
   m_ObjectHideFlags: 0
