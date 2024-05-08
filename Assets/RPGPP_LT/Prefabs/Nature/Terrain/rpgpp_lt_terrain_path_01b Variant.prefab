@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
       propertyPath: m_Name
-      value: rpgpp_lt_terrain_path_01b
+      value: rpgpp_lt_terrain_path_01b Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -18,6 +18,18 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
       propertyPath: m_LocalPosition.x
