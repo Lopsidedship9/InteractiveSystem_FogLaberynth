@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     // Referencia al GameObject recogido actualmente
-    private GameObject objetoRecogido;
+    private GameObject objetoRecogido = null;
     public KeyCode keyDrop = KeyCode.E;
     public float TEspera = 1.0f;
     private float TRestante = 0f;

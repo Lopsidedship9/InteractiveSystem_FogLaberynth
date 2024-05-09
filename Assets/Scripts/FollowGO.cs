@@ -13,7 +13,7 @@ public class FollowGO : MonoBehaviour
         if (objetivo != null)
         {
             // Interpolar la posición para seguir al objetivo
-            Vector3 nuevaPosicion = Vector3.Lerp(transform.position, objetivo.position, velocidad * Time.deltaTime);
+            Vector3 nuevaPosicion = Vector3.Lerp(transform.position, new Vector3(objetivo.position.x, transform.position.y, objetivo.position.z), velocidad * Time.deltaTime);
             transform.position = nuevaPosicion;
         }
     }
