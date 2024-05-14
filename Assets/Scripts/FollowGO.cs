@@ -10,10 +10,9 @@ public class FollowGO : MonoBehaviour
 
     void Update()
     {
-        // Si hay un objetivo
         if (objetivo != null && !estaColisionando)
         {
-            // Interpolar la posición para seguir al objetivo
+            // Interpolar la posicion para seguir al objetivo
             Vector3 nuevaPosicion = Vector3.Lerp(transform.position, new Vector3(objetivo.position.x, transform.position.y, objetivo.position.z), velocidad * Time.deltaTime);
             transform.position = nuevaPosicion;
         }
@@ -25,6 +24,12 @@ public class FollowGO : MonoBehaviour
         {
             this.estaColisionando = true;
         }
+
+        /*No funciona porque el Adventurer puede entrar pero no salir
+        if (other.CompareTag("Wall"))
+        {
+            this.estaColisionando = true;
+        }*/
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,6 +38,12 @@ public class FollowGO : MonoBehaviour
         {
             this.estaColisionando = false;
         }
+
+        /*No funciona porque el Adventurer puede entrar pero no salir
+        if (other.CompareTag("Wall"))
+        {
+            this.estaColisionando = false;
+        }*/
     }
 }
 
