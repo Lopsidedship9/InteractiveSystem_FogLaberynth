@@ -5,18 +5,24 @@ using UnityEngine;
 public class MovmentSound : MonoBehaviour
 {
     public AudioSource walkSound;  
- 
+    private bool sonidoReproduciendose = false;
+
     private void Update()
     {
         if (GetComponent<Rigidbody>().velocity.magnitude > 0)
         {
-            if (!walkSound.isPlaying)
+            if (!sonidoReproduciendose)
             {
                 walkSound.Play();
+                sonidoReproduciendose = true;
             }
-            if (walkSound.isPlaying)
+        }
+        else
+        {
+            if (sonidoReproduciendose)
             {
                 walkSound.Stop();
+                sonidoReproduciendose = false;
             }
         }
     }
