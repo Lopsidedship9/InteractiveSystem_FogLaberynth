@@ -9,6 +9,7 @@ public class PickUp : MonoBehaviour
     public KeyCode keyDrop = KeyCode.E;
     public float TEspera = 1.0f;
     private float TRestante = 0f;
+    
 
     void OnTriggerEnter(Collider other)
     {
@@ -75,4 +76,10 @@ public class PickUp : MonoBehaviour
             TRestante = TEspera;
         }
     }
+    
+    
+    
 }
+
+
+

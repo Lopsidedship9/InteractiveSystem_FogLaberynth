@@ -8,6 +8,7 @@ TagManager:
   - BlendPlane1
   - Lamp
   - Wall
+  - Palanca
   layers:
   - Default
   - TransparentFX
