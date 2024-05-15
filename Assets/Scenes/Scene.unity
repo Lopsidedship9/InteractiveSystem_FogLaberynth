@@ -7764,6 +7764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 263647244}
+  rotationSpeed: 1
 --- !u!1001 &849957561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11461,8 +11462,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: -0.31, z: -0.0008113235}
+  m_Size: {x: 0.2, y: 2.2, z: 0.2}
+  m_Center: {x: 0, y: -0.31, z: 0}
 --- !u!54 &1419854888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14561,6 +14562,7 @@ GameObject:
   - component: {fileID: 1698642631}
   - component: {fileID: 1698642638}
   - component: {fileID: 1698642637}
+  - component: {fileID: 1698642639}
   m_Layer: 0
   m_Name: Adventurer
   m_TagString: Untagged
@@ -14654,7 +14656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698642630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.87, y: -0.25, z: 27.4}
+  m_LocalPosition: {x: 31.79, y: -0.25, z: 27.4}
   m_LocalScale: {x: 2.6575801, y: 2.6575801, z: 2.6575801}
   m_Children:
   - {fileID: 846771649}
@@ -14674,7 +14676,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetivo: {fileID: 263647244}
-  velocidad: 0.5
+  velocidad: 2
+  adventurer_mesh: {fileID: 846771648}
 --- !u!82 &1698642637
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14784,6 +14787,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSound: {fileID: 1698642637}
+--- !u!114 &1698642639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698642630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0538aaed26db9c545bc0f93bfdd53ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object1: {fileID: 1698642635}
+  object2: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
 --- !u!4 &1702394250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
