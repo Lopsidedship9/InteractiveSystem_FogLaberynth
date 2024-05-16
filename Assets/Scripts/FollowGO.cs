@@ -105,51 +105,12 @@ public class FollowGO : MonoBehaviour
         return false; // No collision
     }
 
-
-    /*private bool CheckCollisionX(Vector3 direction)
-    {
-        float xMagnitude = Mathf.Abs(direction.x);
-
-        // Check for collision in the x direction
-        RaycastHit hitX;
-        if (Physics.Raycast(transform.position, new Vector3(direction.x, 0f, 0f), out hitX, xMagnitude + 0.75f))
-        {
-            if (hitX.collider.CompareTag("Wall"))
-            {
-                return true; // There's a collision in the x direction
-            }
-        }
-        return false; // No collision
-    }
-
-    private bool CheckCollisionZ(Vector3 direction)
-    {
-        float zMagnitude = Mathf.Abs(direction.z);
-
-        // Check for collision in the z direction
-        RaycastHit hitZ;
-        if (Physics.Raycast(transform.position, new Vector3(0f, 0f, direction.z), out hitZ, zMagnitude + 0.75f))
-        {
-            if (hitZ.collider.CompareTag("Wall"))
-            {
-                return true; // There's a collision in the z direction
-            }
-        }
-        return false; // No collision
-    }*/
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Lamp"))
         {
             this.estaColisionando = true;
         }
-
-
-        /*if (other.CompareTag("Wall"))
-        {
-            this.estaColisionando = true;
-        }*/
     }
 
     private void OnTriggerExit(Collider other)
@@ -158,11 +119,6 @@ public class FollowGO : MonoBehaviour
         {
             this.estaColisionando = false;
         }
-
-        /*if (other.CompareTag("Wall"))
-        {
-            this.estaColisionando = false;
-        }*/
     }
 }
 
