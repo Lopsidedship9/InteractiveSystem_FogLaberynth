@@ -76,9 +76,6 @@ public class PickUp : MonoBehaviour
             TRestante = TEspera;
         }
     }
-    
-    
-    
 }
 
 
