@@ -4992,7 +4992,7 @@ MonoBehaviour:
   numberOfPlayers: 4
   numberOfBaseStations: 4
   screenToWorldPosTracking: 1
-  enableRotation: 1
+  enableRotation: 0
   enableYAxis: 1
   swapXZ: 1
   invertX: 1
