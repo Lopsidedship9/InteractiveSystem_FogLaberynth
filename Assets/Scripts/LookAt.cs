@@ -6,8 +6,9 @@ public class LookAt : MonoBehaviour
 {
     public Transform target;
     public float rotationSpeed = 0.5f;
+    private float threshold = 0.0001f;
 
-    public void RotationToMove(Vector3 new_position)
+    public void RotationToMove(Vector3 new_position, Animator animation)
     {
         if (target != null)
         {
@@ -39,6 +40,7 @@ public class LookAt : MonoBehaviour
 
             // Slerp between the current rotation and the target rotation
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
         }
     }
 
@@ -59,5 +61,17 @@ public class LookAt : MonoBehaviour
 
         // Check if the dot product is greater than or equal to the cosine of the angle threshold
         return dotProduct >= cosThreshold;
+    }
+
+    public bool HasPositionChanged(Vector3 new_position)
+    {
+        // Calculate the squared distance between the previous and new positions
+        float squaredDistance = (new_position - transform.position).sqrMagnitude;
+
+        // Check if the squared distance is greater than the threshold squared
+        bool positionChanged = squaredDistance > threshold * threshold;
+
+
+        return positionChanged;
     }
 }

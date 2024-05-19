@@ -44,18 +44,7 @@ public class PickUp : MonoBehaviour
 
     private void RecogerObjeto(GameObject objeto)
     {
-        /*// Asigna el objeto recogido como hijo del recogedor
-        objeto.transform.SetParent(transform);
-        
-        // Opcionalmente, desactiva la física del objeto recogido
-        Rigidbody rb = objeto.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.isKinematic = true;
-        }
 
-        // Coloca el objeto recogido en la misma posición que el recogedor
-        objeto.transform.localPosition = Vector3.zero;*/
 
         // Guarda la referencia al objeto recogido
         objetoRecogido = objeto;
@@ -68,16 +57,6 @@ public class PickUp : MonoBehaviour
         // Verifica que hay un objeto recogido para soltar
         if (objetoRecogido != null)
         {
-            /*// Elimina el objeto recogido como hijo del recogedor
-            objetoRecogido.transform.SetParent(null);
-
-            // Vuelve a habilitar la física del objeto recogido
-            Rigidbody rb = objetoRecogido.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.isKinematic = false;
-            }
-            */
 
             objetoRecogido.transform.position = new Vector3(objetoRecogido.transform.position.x, objetoRecogido.transform.position.y - 8, objetoRecogido.transform.position.z);
 
@@ -87,6 +66,40 @@ public class PickUp : MonoBehaviour
             // Inicia el tiempo de espera antes de volver a recoger
             TRestante = TEspera;
         }
+    }
+
+    private bool CheckCollision(Vector3 displacement)
+    {
+
+        Vector3 positionToCompare = transform.position + displacement;
+
+        // Define the tag of the GameObject you want to find
+        string colliderTag = "Wall";
+
+        Collider AdventurerCollider = this.GetComponent<Collider>();
+        Bounds AdventurerBoundingBox = AdventurerCollider.bounds;
+        AdventurerBoundingBox.center = positionToCompare;
+
+        // Find all GameObjects with the specified tag
+        GameObject[] taggedObjects = GameObject.FindGameObjectsWithTag(colliderTag);
+
+        foreach (GameObject obj in taggedObjects)
+        {
+            // Check if the GameObject has a Collider component
+            Collider collider = obj.GetComponent<Collider>();
+            if (collider != null)
+            {
+                Bounds expandedBounds = collider.bounds;
+
+                // Check if the position is inside the expanded bounds
+                if (expandedBounds.Intersects(AdventurerBoundingBox))
+                {
+                    return true; // There's a collision
+                }
+            }
+        }
+
+        return false; // No collision
     }
 }
 

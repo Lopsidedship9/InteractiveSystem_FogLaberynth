@@ -9,10 +9,12 @@ public class FollowGO : MonoBehaviour
     public GameObject adventurer_mesh;
     private bool estaColisionando = false;
     private LookAt LookAt;
+    private Animator Animation;
 
     void Start()
     {
         LookAt = adventurer_mesh.GetComponent<LookAt>();
+        Animation = adventurer_mesh.GetComponent<Animator>();
     }
     void Update()
     {
@@ -63,10 +65,21 @@ public class FollowGO : MonoBehaviour
                 new_pos += zMovement * velocidad * Time.deltaTime;
             }
 
-            LookAt.RotationToMove(new_pos);
-            if (LookAt.CorrectOrientation(new_pos))
+            LookAt.RotationToMove(new_pos, Animation);
+            if (LookAt.CorrectOrientation(new_pos) && LookAt.HasPositionChanged(new_pos))
             {
                 transform.position = new_pos;
+                if (Animation.GetBool("IsWalking") == false)
+                {
+                    Animation.SetBool("IsWalking", true);
+                }
+            } 
+            else
+            {
+                if (Animation.GetBool("IsWalking") == true)
+                {
+                    Animation.SetBool("IsWalking", false);
+                }
             }
         }
     }
@@ -110,6 +123,10 @@ public class FollowGO : MonoBehaviour
         if (other.CompareTag("Lamp"))
         {
             this.estaColisionando = true;
+            if (Animation.GetBool("IsWalking") == true)
+            {
+                Animation.SetBool("IsWalking", false);
+            }
         }
     }
 
