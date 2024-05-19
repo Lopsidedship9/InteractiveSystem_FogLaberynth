@@ -33,11 +33,18 @@ public class PickUp : MonoBehaviour
         {
             TRestante -= Time.deltaTime;
         }
+
+        if (objetoRecogido != null)
+        {
+            // Position the object in front of the player or at a designated position
+            Vector3 newPosition = new Vector3(transform.position.x, objetoRecogido.transform.position.y, transform.position.z);
+            objetoRecogido.transform.position = newPosition;
+        }
     }
 
     private void RecogerObjeto(GameObject objeto)
     {
-        // Asigna el objeto recogido como hijo del recogedor
+        /*// Asigna el objeto recogido como hijo del recogedor
         objeto.transform.SetParent(transform);
         
         // Opcionalmente, desactiva la física del objeto recogido
@@ -48,10 +55,12 @@ public class PickUp : MonoBehaviour
         }
 
         // Coloca el objeto recogido en la misma posición que el recogedor
-        objeto.transform.localPosition = Vector3.zero;
+        objeto.transform.localPosition = Vector3.zero;*/
 
         // Guarda la referencia al objeto recogido
         objetoRecogido = objeto;
+
+        objetoRecogido.transform.position = new Vector3(objetoRecogido.transform.position.x, objetoRecogido.transform.position.y + 8, objetoRecogido.transform.position.z);
     }
 
     private void SoltarObjeto()
@@ -59,7 +68,7 @@ public class PickUp : MonoBehaviour
         // Verifica que hay un objeto recogido para soltar
         if (objetoRecogido != null)
         {
-            // Elimina el objeto recogido como hijo del recogedor
+            /*// Elimina el objeto recogido como hijo del recogedor
             objetoRecogido.transform.SetParent(null);
 
             // Vuelve a habilitar la física del objeto recogido
@@ -68,6 +77,9 @@ public class PickUp : MonoBehaviour
             {
                 rb.isKinematic = false;
             }
+            */
+
+            objetoRecogido.transform.position = new Vector3(objetoRecogido.transform.position.x, objetoRecogido.transform.position.y - 8, objetoRecogido.transform.position.z);
 
             // Limpia la referencia al objeto recogido
             objetoRecogido = null;
