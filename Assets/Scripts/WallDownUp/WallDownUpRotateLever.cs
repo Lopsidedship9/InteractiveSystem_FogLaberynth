@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Estado
+/*public enum Estado
 {
     Stop,
     PositiveR,
     NegativeR
-}
+}Lo comento porque sino peta y para saber que existe ya que se usa.*/
 
-public class RotateLever : MonoBehaviour
+public class WallDownUpRotateLever : MonoBehaviour
 {
     private bool isRotated = false; //Dira si ya ha rotado o si esta en la posicion inicial
     public float TEspera = 1.0f;
@@ -19,7 +19,8 @@ public class RotateLever : MonoBehaviour
     private float initialRotation;
     private float rotationTimeElapsed;
     public bool oneRotation = false;
-    private bool noMore = false;
+    private bool noMore = false; //Por si queremos hacer que solo se levante una vez
+    public WallDownUpMovement WallDownUpMovementScript;
     void Start()
     {
         targetRotation = transform.eulerAngles.x; // Inicializa la rotacion objetivo
@@ -35,7 +36,15 @@ public class RotateLever : MonoBehaviour
             transform.eulerAngles = new Vector3(newRotation, transform.eulerAngles.y, transform.eulerAngles.z);
 
             if (rotationTimeElapsed >= TEspera) 
-            {
+            {   
+                if(isRotated == true)//Sabemos que si esta arriba la palanca el muro esta arriba tb.
+                {
+                    WallDownUpMovementScript.goDown();
+                }
+                else
+                {
+                    WallDownUpMovementScript.goUp();
+                }
                 isRotating = false;
                 needRotation = Estado.Stop;
                 rotationTimeElapsed = 0f;

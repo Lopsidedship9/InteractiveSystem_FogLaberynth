@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void setPosition(Vector3 pos)
     {
-        //swith playerIndex
+        //swith playerIndex per selecionar nomes personatges.
         transform.position = pos;
     }
 

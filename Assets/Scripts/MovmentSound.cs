@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class MovmentSound : MonoBehaviour
 {
-    public AudioSource walkSound;  
+    public AudioSource sound;
+    public float movementThreshold = 0.5f;  // Umbral para detectar movimiento significativo
     private bool sonidoReproduciendose = false;
+    private Vector3 lastPosition;
+    private Vector3 currentPosition;
+    private  float distanceMoved;
+
+    private void Start()
+    {
+        lastPosition = transform.position;
+    }
 
     private void Update()
     {
-        if (GetComponent<Rigidbody>().velocity.magnitude > 0)
+        currentPosition = transform.position;
+        distanceMoved = Vector3.Distance(currentPosition, lastPosition);
+        if (distanceMoved > movementThreshold)
         {
             if (!sonidoReproduciendose)
             {
-                walkSound.Play();
+                sound.Play();
                 sonidoReproduciendose = true;
             }
         }
@@ -21,9 +32,10 @@ public class MovmentSound : MonoBehaviour
         {
             if (sonidoReproduciendose)
             {
-                walkSound.Stop();
+                sound.Stop();
                 sonidoReproduciendose = false;
             }
         }
+        lastPosition = currentPosition;
     }
 }
