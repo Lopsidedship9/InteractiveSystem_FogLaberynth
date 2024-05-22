@@ -12,6 +12,13 @@ public class WallDownUpMovement : MonoBehaviour
     private Vector3 newposDown;
     private Vector3 newposUp;
     private Vector3 pos;
+    private Collider objectCollider;
+
+    void Awake()
+    {
+        // Get the Collider component attached to this GameObject
+        objectCollider = GetComponent<Collider>();
+    }
     void Update()
     {
         pos = transform.position;
@@ -22,6 +29,7 @@ public class WallDownUpMovement : MonoBehaviour
             {
                 Debug.Log("MaxDown");
                 transform.position = new Vector3(pos.x, lowerY, pos.z);
+                objectCollider.enabled = false;
                 moveDown = false;
             }
             else
@@ -36,6 +44,7 @@ public class WallDownUpMovement : MonoBehaviour
             {
                 Debug.Log("MaxUp");
                 transform.position = new Vector3(pos.x, upperY, pos.z);
+                objectCollider.enabled = true;
                 moveUp = false;
             }
             else    
