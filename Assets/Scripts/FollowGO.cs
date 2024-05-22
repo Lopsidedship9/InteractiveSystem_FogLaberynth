@@ -10,6 +10,8 @@ public class FollowGO : MonoBehaviour
     private bool estaColisionando = false;
     private LookAt LookAt;
     private Animator Animation;
+    public SoundManager soundManager;
+    private bool soundStopped;
 
     void Start()
     {
@@ -32,7 +34,7 @@ public class FollowGO : MonoBehaviour
             if (movementDirection.x > 1.0f)
             {
                 xMovement = new Vector3(1.0f, 0f, 0f);
-            } 
+            }
             else if (movementDirection.x < -1.0f)
             {
                 xMovement = new Vector3(-1.0f, 0f, 0f);
@@ -41,8 +43,8 @@ public class FollowGO : MonoBehaviour
             if (movementDirection.z > 1.0f)
             {
                 zMovement = new Vector3(0f, 0f, 1.0f);
-            } 
-            else if (movementDirection.z < -1.0f) 
+            }
+            else if (movementDirection.z < -1.0f)
             {
                 zMovement = new Vector3(0f, 0f, -1.0f);
             }
@@ -72,15 +74,24 @@ public class FollowGO : MonoBehaviour
                 if (Animation.GetBool("IsWalking") == false)
                 {
                     Animation.SetBool("IsWalking", true);
+                    soundManager.PlayWalkingSound();
+                    soundStopped = false;
                 }
-            } 
+            }
             else
             {
                 if (Animation.GetBool("IsWalking") == true)
                 {
                     Animation.SetBool("IsWalking", false);
+                    soundManager.StopWalkingSound();
                 }
             }
+        }
+        else
+        {
+            if(!soundStopped)
+                soundManager.StopWalkingSound();
+            soundStopped = true;
         }
     }
 

@@ -21,6 +21,7 @@ public class WallDownUpRotateLever : MonoBehaviour
     public bool oneRotation = false;
     private bool noMore = false; //Por si queremos hacer que solo se levante una vez
     public WallDownUpMovement WallDownUpMovementScript;
+    public SoundManager soundManager;
     void Start()
     {
         targetRotation = transform.eulerAngles.x; // Inicializa la rotacion objetivo
@@ -36,8 +37,9 @@ public class WallDownUpRotateLever : MonoBehaviour
             transform.eulerAngles = new Vector3(newRotation, transform.eulerAngles.y, transform.eulerAngles.z);
 
             if (rotationTimeElapsed >= TEspera) 
-            {   
-                if(isRotated == true)//Sabemos que si esta arriba la palanca el muro esta arriba tb.
+            {
+                soundManager.PlayStoneWallSound();
+                if (isRotated == true)//Sabemos que si esta arriba la palanca el muro esta arriba tb.
                 {
                     WallDownUpMovementScript.goDown();
                 }
