@@ -673,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8232,7 +8232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994328126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45, y: 0, z: 25}
+  m_LocalPosition: {x: 42, y: 0, z: 25}
   m_LocalScale: {x: 4, y: 5, z: 10}
   m_Children:
   - {fileID: 1793273425}
@@ -10809,7 +10809,7 @@ GameObject:
   - component: {fileID: 1440896352}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12917,6 +12917,14 @@ PrefabInstance:
       propertyPath: oneRotation
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8015616812918747365, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Size.z
+      value: 1.1333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015616812918747365, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_TagString
       value: Untagged
@@ -13874,7 +13882,7 @@ GameObject:
   - component: {fileID: 1793273426}
   m_Layer: 0
   m_Name: FinalTrigger
-  m_TagString: Untagged
+  m_TagString: ChangeScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13901,7 +13909,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793273424}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 1.2}

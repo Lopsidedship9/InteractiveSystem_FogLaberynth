@@ -61,12 +61,12 @@ public class PickUp : MonoBehaviour
         Vector3 targetPosition;
         if (UpAWall)
         {
-            targetPosition = objetoRecogido.transform.position + Vector3.up * 5;
+            targetPosition = objetoRecogido.transform.position + Vector3.up * 2.5f;
             UpAWall = false;
         }
         else
         {
-            targetPosition = objetoRecogido.transform.position + Vector3.up * 8;
+            targetPosition = objetoRecogido.transform.position + Vector3.up * 5.5f;
         }
 
         // Start a coroutine to move the object smoothly to the target position
@@ -84,12 +84,12 @@ public class PickUp : MonoBehaviour
             Vector3 targetPosition;
             if (checkIfFallsToWall())
             {
-                targetPosition = objetoRecogido.transform.position + Vector3.down * 5;
+                targetPosition = objetoRecogido.transform.position + Vector3.down * 2.5f;
                 UpAWall = true;
             }
             else
             {
-                targetPosition = objetoRecogido.transform.position + Vector3.down * 8;
+                targetPosition = objetoRecogido.transform.position + Vector3.down * 5.5f;
             }
 
             // Start a coroutine to move the object smoothly to the target position
@@ -141,10 +141,17 @@ public class PickUp : MonoBehaviour
         if(traking)
         {
             pos = transform.position;
-            return (pos.y <= y_catch);
-        } else {
-            return Input.GetKeyDown(keyDrop);
+        } else 
+        {
+            if(Input.GetKeyDown(keyDrop))
+            {
+                pos = new Vector3(transform.position.x, 8.5f, transform.position.z);
+            } else 
+            {
+                pos = new Vector3(transform.position.x, 10.0f, transform.position.z);
+            }
         }
+        return (pos.y <= y_catch);
     }
 }
 

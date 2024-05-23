@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Palanca
   - Lever
+  - ChangeScene
   layers:
   - Default
   - TransparentFX
