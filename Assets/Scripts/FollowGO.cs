@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class FollowGO : MonoBehaviour
@@ -138,6 +139,10 @@ public class FollowGO : MonoBehaviour
             {
                 Animation.SetBool("IsWalking", false);
             }
+        }
+        if (other.CompareTag("ChangeScene"))
+        {
+            SceneManager.LoadScene("Scene2");
         }
     }
 
