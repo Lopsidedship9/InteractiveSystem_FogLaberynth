@@ -11,22 +11,29 @@ public class PickUp : MonoBehaviour
     private float TRestante = 0f;
     private bool UpAWall = false;
     private bool objectPicked = false;
+    private Vector3 pos;
+    public float y_catch = 9.0f;
+    public bool traking;
     
     //Solve problem with accuracy it should feel fluent and when it seams you can pick it up to always  work
     void OnTriggerStay(Collider other)
     {
+        bool cond = IsTracking();
+
         // Verifica si el objeto con el que colisionó es un objeto recogible y no hay ningún objeto ya recogido
-        if (other.gameObject.CompareTag("Lamp") && objetoRecogido == null && TRestante <= 0 && Input.GetKeyDown(keyDrop) && objectPicked == false)
+        if (other.gameObject.CompareTag("Lamp") && objetoRecogido == null && TRestante <= 0 && cond && objectPicked == false)
         {
             RecogerObjeto(other.gameObject);
             objectPicked = true;
         }
     }
 
+
     void Update()
     {
+        bool cond = IsTracking();
         // Verifica si el usuario quiere soltar el objeto
-        if (Input.GetKeyDown(keyDrop) && objetoRecogido != null && objectPicked == true && TRestante <= 0)
+        if (cond && objetoRecogido != null && objectPicked == true && TRestante <= 0)
         {
             SoltarObjeto();
             objectPicked = false;
@@ -49,8 +56,6 @@ public class PickUp : MonoBehaviour
 
     private void RecogerObjeto(GameObject objeto)
     {
-
-
         // Guarda la referencia al objeto recogido
         objetoRecogido = objeto;
         Vector3 targetPosition;
@@ -130,6 +135,16 @@ public class PickUp : MonoBehaviour
 
         // Ensure the object reaches the exact target position
         objectTransform.position = targetPosition;
+    }
+
+    bool IsTracking(){
+        if(traking)
+        {
+            pos = transform.position;
+            return (pos.y <= y_catch);
+        } else {
+            return Input.GetKeyDown(keyDrop);
+        }
     }
 }
 
