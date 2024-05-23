@@ -35,7 +35,8 @@ public class SoundManager : MonoBehaviour
 
     public void PlayWalkingSound()
     {
-        walkSource.loop = false;
+        walkSource.loop = true;
+        stoneWallSource.volume = 1.0f;
         walkSource.Play();
     }
 
