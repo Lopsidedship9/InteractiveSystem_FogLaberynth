@@ -142,7 +142,9 @@ public class FollowGO : MonoBehaviour
         }
         if (other.CompareTag("ChangeScene"))
         {
+            Destroy(gameObject);
             SceneManager.LoadScene("Scene2");
+            
         }
     }
 
