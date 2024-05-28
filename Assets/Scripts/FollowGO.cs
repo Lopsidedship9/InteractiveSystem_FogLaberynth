@@ -13,6 +13,9 @@ public class FollowGO : MonoBehaviour
     private Animator Animation;
     public SoundManager soundManager;
     private bool soundStopped;
+    public ParticleSystemForceField forceField;
+    private float targetForceFieldSize = 60.0f;
+    public float expansionDuration = 3f;
 
     void Start()
     {
@@ -83,8 +86,7 @@ public class FollowGO : MonoBehaviour
             {
                 if (Animation.GetBool("IsWalking") == true)
                 {
-                    Animation.SetBool("IsWalking", false);
-                    soundManager.StopWalkingSound();
+                        Animation.SetBool("IsWalking", false);                        soundManager.StopWalkingSound();
                 }
             }
         }
@@ -142,9 +144,11 @@ public class FollowGO : MonoBehaviour
         }
         if (other.CompareTag("ChangeScene"))
         {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Scene2");
-            
+            Debug.Log(forceField.endRange);
+            StartCoroutine(ChangeForceFieldSize());
+            //Destroy(gameObject);
+            //SceneManager.LoadScene("Scene2");
+                
         }
     }
 
@@ -154,6 +158,24 @@ public class FollowGO : MonoBehaviour
         {
             this.estaColisionando = false;
         }
+    }
+
+    private IEnumerator ChangeForceFieldSize()
+    {
+        float startSize = forceField.endRange;
+        float timeElapsed = 0;
+
+        while (timeElapsed < expansionDuration)
+        {
+            forceField.endRange = Mathf.Lerp(startSize, targetForceFieldSize, timeElapsed / expansionDuration);
+            timeElapsed += Time.deltaTime;
+            yield return null; // Espera hasta el siguiente frame
+        }
+        forceField.endRange = targetForceFieldSize;
+        Debug.Log(forceField.endRange);
+
+        Destroy(gameObject);
+        SceneManager.LoadScene("Scene2");
     }
 }
 

@@ -13268,6 +13268,8 @@ MonoBehaviour:
   velocidad: 2
   adventurer_mesh: {fileID: 846771648}
   soundManager: {fileID: 258537777}
+  forceField: {fileID: 1493997888}
+  expansionDuration: 5
 --- !u!82 &1698642637
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13895,7 +13897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793273424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.99999, y: 0, z: 24.8}
+  m_LocalPosition: {x: 43, y: 0, z: 25}
   m_LocalScale: {x: 4, y: 5, z: 10}
   m_Children: []
   m_Father: {fileID: 84243974}
