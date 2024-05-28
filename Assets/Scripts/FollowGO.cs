@@ -86,7 +86,8 @@ public class FollowGO : MonoBehaviour
             {
                 if (Animation.GetBool("IsWalking") == true)
                 {
-                        Animation.SetBool("IsWalking", false);                        soundManager.StopWalkingSound();
+                        Animation.SetBool("IsWalking", false);                        
+                        soundManager.StopWalkingSound();
                 }
             }
         }
@@ -144,11 +145,8 @@ public class FollowGO : MonoBehaviour
         }
         if (other.CompareTag("ChangeScene"))
         {
-            Debug.Log(forceField.endRange);
-            StartCoroutine(ChangeForceFieldSize());
-            //Destroy(gameObject);
-            //SceneManager.LoadScene("Scene2");
-                
+            //Debug.Log(forceField.endRange);
+            StartCoroutine(ChangeForceFieldSize());                
         }
     }
 
@@ -172,7 +170,7 @@ public class FollowGO : MonoBehaviour
             yield return null; // Espera hasta el siguiente frame
         }
         forceField.endRange = targetForceFieldSize;
-        Debug.Log(forceField.endRange);
+        //Debug.Log(forceField.endRange);
 
         Destroy(gameObject);
         SceneManager.LoadScene("Scene2");
