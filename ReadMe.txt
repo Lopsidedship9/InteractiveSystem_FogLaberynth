@@ -6,6 +6,9 @@ https://sketchfab.com/3d-models/las-xiii-runas-de-los-dioses-a96efad97c8c441d828
 Brick:
 https://id.unity.com/en/conversations/cbeb3b5e-635b-4f09-9434-0f5a835ce476005f
 
+Wood Material:
+https://sketchfab.com/3d-models/wood-shingles-material-0c81b56c86304202ad6409a2eb909d90
+
 Lanter:
 https://assetstore.unity.com/packages/3d/environments/historic/modular-medieval-lanterns-85527#reviews
 
@@ -25,3 +28,4 @@ Music:
 Background: https://pixabay.com/sound-effects/forest-jungle-nature-dark-atmo-6154/
 Moving wall: https://pixabay.com/es/sound-effects/push-stone-statue-2-204993/
 Steps adventurer: https://pixabay.com/es/sound-effects/concrete-footsteps-1-6265/
+Explosion: https://pixabay.com/es/sound-effects/explosion-47821/

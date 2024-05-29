@@ -27,7 +27,7 @@ public class WallDownUpMovement : MonoBehaviour
             newposDown = pos + (Vector3.down * speed * Time.deltaTime);
             if (newposDown.y <= lowerY)
             {
-                Debug.Log("MaxDown");
+                //Debug.Log("MaxDown");
                 transform.position = new Vector3(pos.x, lowerY, pos.z);
                 objectCollider.enabled = false;
                 moveDown = false;
@@ -42,7 +42,7 @@ public class WallDownUpMovement : MonoBehaviour
             newposUp = pos + (Vector3.up * speed * Time.deltaTime);
             if (newposUp.y >= upperY)
             {
-                Debug.Log("MaxUp");
+                //Debug.Log("MaxUp");
                 transform.position = new Vector3(pos.x, upperY, pos.z);
                 objectCollider.enabled = true;
                 moveUp = false;
@@ -56,13 +56,13 @@ public class WallDownUpMovement : MonoBehaviour
 
     public void goDown()
     {
-        Debug.Log("Go Down");
+        //Debug.Log("Go Down");
         moveDown = true;
     }
 
     public void goUp()
     {
-        Debug.Log("Go Up");
+        //Debug.Log("Go Up");
         moveUp = true;
     }
 }
