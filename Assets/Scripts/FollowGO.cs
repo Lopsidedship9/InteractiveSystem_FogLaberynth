@@ -8,6 +8,9 @@ public class FollowGO : MonoBehaviour
     public Transform objetivo;
     public float velocidad = 1.0f;
     public GameObject adventurer_mesh;
+    public GameObject lamp;
+    public GameObject fog;
+    public Rigidbody lampRigidbody;
     private bool estaColisionando = false;
     private LookAt LookAt;
     private Animator Animation;
@@ -16,6 +19,9 @@ public class FollowGO : MonoBehaviour
     public ParticleSystemForceField forceField;
     private float targetForceFieldSize = 60.0f;
     public float expansionDuration = 3f;
+
+    //Lamp fade
+    public float moveDuration = 1.5f;
 
     void Start()
     {
@@ -86,8 +92,8 @@ public class FollowGO : MonoBehaviour
             {
                 if (Animation.GetBool("IsWalking") == true)
                 {
-                        Animation.SetBool("IsWalking", false);                        
-                        soundManager.StopWalkingSound();
+                     Animation.SetBool("IsWalking", false);                        
+                     soundManager.StopWalkingSound();
                 }
             }
         }
@@ -170,10 +176,58 @@ public class FollowGO : MonoBehaviour
             yield return null; // Espera hasta el siguiente frame
         }
         forceField.endRange = targetForceFieldSize;
+        Destroy(fog);
         //Debug.Log(forceField.endRange);
+
+        yield return StartCoroutine(LampDisapear());
+        yield return StartCoroutine(Walk_out_animation());
+    }
+
+    private IEnumerator Walk_out_animation()
+    {
+        Vector3 new_pos = transform.position;
+
+        Vector3 direction = new Vector3(1.0f, 0f, 0f);
+        Animation.SetBool("IsWalking", true);
+
+        while (new_pos.x < 95.0f)
+        {
+            new_pos += direction * velocidad * Time.deltaTime;
+            transform.position = new_pos;
+            yield return null; // Espera hasta el siguiente frame
+        }
+        Animation.SetBool("IsWalking", false);
 
         Destroy(gameObject);
         SceneManager.LoadScene("Scene2");
+    }
+
+    private IEnumerator LampDisapear()
+    {
+        // Deactivate the lamp's Rigidbody component to allow it to move through walls
+        lampRigidbody.isKinematic = true;
+
+        Vector3 startPosition = lamp.transform.position; // Starting position of the lamp
+        Vector3 targetPosition = new Vector3(lamp.transform.position.x, -3.0f, lamp.transform.position.z);
+        float elapsedTime = 0f;
+
+        // Loop until the elapsed time reaches the move duration
+        while (elapsedTime < moveDuration)
+        {
+            // Calculate the interpolation factor based on the elapsed time and move duration
+            float t = elapsedTime / moveDuration;
+
+            // Interpolate the position between the starting position and the target position
+            lamp.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+
+            // Increment the elapsed time by the time since the last frame
+            elapsedTime += Time.deltaTime;
+
+            // Wait for the next frame
+            yield return null;
+        }
+
+        Destroy(lamp);
     }
 }
 

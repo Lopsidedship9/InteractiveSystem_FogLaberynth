@@ -9,6 +9,7 @@ public class Activation : MonoBehaviour
     private Vector3 targetPosition; // Store the target position of the object
     private bool isMoving = false; // Track if the object is currently moving
     public float moveDuration = 2.0f; // Duration of the movement in seconds, adjusted to slow down the movement
+    private Collider WallCollider;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class Activation : MonoBehaviour
         originalPosition = new Vector3(transform.position.x, 1f, transform.position.z); // Set the original y position to 1
         targetPosition = new Vector3(transform.position.x, -3f, transform.position.z); // Set the target y position to -3
         transform.position = originalPosition; // Ensure the wall starts at the original position
+        WallCollider = gameObject.GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -49,5 +51,13 @@ public class Activation : MonoBehaviour
 
         transform.position = end; // Ensure the final position is set to the end position
         isMoving = false; // Set isMoving to false to indicate the object has finished moving
+
+        if (transform.position == targetPosition)
+        {
+            WallCollider.enabled = false;
+        } else
+        {
+            WallCollider.enabled = true;
+        }
     }
 }
