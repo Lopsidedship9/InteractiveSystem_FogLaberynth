@@ -28,7 +28,7 @@ public class SoundManager : MonoBehaviour
     public void PlayStoneWallSound()
     {
         stoneWallSource.loop = false;
-        stoneWallSource.volume = 0.5f;
+        stoneWallSource.volume = 0.4f;
         stoneWallSource.Play();
     }
 
@@ -40,7 +40,7 @@ public class SoundManager : MonoBehaviour
     public void PlayWalkingSound()
     {
         walkSource.loop = true;
-        stoneWallSource.volume = 1.0f;
+        stoneWallSource.volume = 1.5f;
         walkSource.Play();
     }
 

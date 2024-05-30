@@ -10,11 +10,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 newPos;
         if(pos.y <= 0.6f)
         {
-            newPos = new Vector3(pos.x,0.5f,pos.z);
+            newPos = Vector3.Lerp(transform.position, new Vector3(pos.x, 0.5f, pos.z), 0.05f);
         }
         else
         {
-            newPos = new Vector3(pos.x,2.0f,pos.z);
+            newPos = Vector3.Lerp(transform.position, new Vector3(pos.x, 2.0f, pos.z), 0.05f);
         }
         transform.position = newPos;
     }
