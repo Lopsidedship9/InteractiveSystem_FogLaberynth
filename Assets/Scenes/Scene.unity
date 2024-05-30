@@ -3308,10 +3308,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335544433}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 20, z: 1}
+  m_Size: {x: 1, y: 8.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &335544436
 MeshRenderer:
@@ -4466,8 +4466,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!65 &483883240
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5291,7 +5289,7 @@ MonoBehaviour:
   cameras:
   - {fileID: 342261394}
   - {fileID: 2041817079}
-  enableTracking: 0
+  enableTracking: 1
   numberOfPlayers: 4
   numberOfBaseStations: 4
   screenToWorldPosTracking: 1
@@ -6150,10 +6148,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706782008}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 20, z: 1}
+  m_Size: {x: 1, y: 8.5, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &706782012
 MeshRenderer:
@@ -6570,8 +6568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!65 &763629981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7260,7 +7256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872290396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: 1, z: 4.9}
+  m_LocalPosition: {x: -0.8, y: 1, z: 8.47}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 429369979}
@@ -7287,11 +7283,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872290396}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 10, z: 1}
-  m_Center: {x: 0, y: 8, z: 0}
+  m_Size: {x: 1, y: 8.5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &872290400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9053,8 +9049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!65 &1151668550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9763,8 +9757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!1 &1266383783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11128,8 +11120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!1 &1448092806
 GameObject:
   m_ObjectHideFlags: 0
@@ -11698,8 +11688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!1 &1483708435
 GameObject:
   m_ObjectHideFlags: 0
@@ -12092,8 +12080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!65 &1554760528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13498,7 +13484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698642630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80, y: -0.25, z: 73}
+  m_LocalPosition: {x: 79.8, y: -0.25, z: 72.2}
   m_LocalScale: {x: 2.6575801, y: 2.6575801, z: 2.6575801}
   m_Children:
   - {fileID: 846771649}
@@ -14660,7 +14646,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 0
+  traking: 1
 --- !u!65 &1845463459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14976,8 +14962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb442334999fb84487442a2b692a37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  q: {x: 0, y: 0, z: 0, w: 0}
-  manual: 0
 --- !u!1 &1866559963
 GameObject:
   m_ObjectHideFlags: 0
@@ -16037,7 +16021,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 0
+  traking: 1
 --- !u!54 &1989040988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17550,7 +17534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7604246369061530263, guid: 1f098a14a9aeb7341b2e1e08d22cab45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 7604246369061530263, guid: 1f098a14a9aeb7341b2e1e08d22cab45, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17558,7 +17542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7604246369061530263, guid: 1f098a14a9aeb7341b2e1e08d22cab45, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 7604246369061530263, guid: 1f098a14a9aeb7341b2e1e08d22cab45, type: 3}
       propertyPath: m_LocalRotation.w

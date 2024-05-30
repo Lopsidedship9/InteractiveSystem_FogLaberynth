@@ -5,20 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Quaternion q;
-    public bool manual;
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void setPosition(Vector3 pos)
     {
         Vector3 newPos;
