@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovmentSound : MonoBehaviour
 {
-    public AudioSource sound;
+    public SoundManager soundManager;
     public float movementThreshold = 0.5f;  // Umbral para detectar movimiento significativo
     private bool sonidoReproduciendose = false;
     private Vector3 lastPosition;
@@ -24,7 +24,7 @@ public class MovmentSound : MonoBehaviour
         {
             if (!sonidoReproduciendose)
             {
-                sound.Play();
+                soundManager.PlayStoneWallSound();
                 sonidoReproduciendose = true;
             }
         }
@@ -32,7 +32,7 @@ public class MovmentSound : MonoBehaviour
         {
             if (sonidoReproduciendose)
             {
-                sound.Stop();
+                soundManager.StopStoneWallSound();
                 sonidoReproduciendose = false;
             }
         }

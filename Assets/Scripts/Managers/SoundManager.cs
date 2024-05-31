@@ -23,12 +23,18 @@ public class SoundManager : MonoBehaviour
         walkSource.clip = walkClip;
         stoneWallSource.clip = stoneWallClip;
         explosionWoodSource.clip = explosionWoodClip;
+
+        stoneWallSource.volume = 0.4f;
+        stoneWallSource.volume = 2.0f;
+        explosionWoodSource.volume = 0.5f;
+
+        stoneWallSource.loop = false;
+        walkSource.loop = true;
+        explosionWoodSource.loop = false;
     }
 
     public void PlayStoneWallSound()
     {
-        stoneWallSource.loop = false;
-        stoneWallSource.volume = 0.4f;
         stoneWallSource.Play();
     }
 
@@ -39,8 +45,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlayWalkingSound()
     {
-        walkSource.loop = true;
-        stoneWallSource.volume = 1.5f;
         walkSource.Play();
     }
 
@@ -51,8 +55,6 @@ public class SoundManager : MonoBehaviour
 
     public void PlayExplosionWoodSound()
     {
-        explosionWoodSource.loop = false;
-        explosionWoodSource.volume = 0.5f;
         explosionWoodSource.Play();
     }
 
