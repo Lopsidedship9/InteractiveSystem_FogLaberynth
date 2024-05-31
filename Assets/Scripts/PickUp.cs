@@ -7,7 +7,7 @@ public class PickUp : MonoBehaviour
     // Referencia al GameObject recogido actualmente
     private GameObject objetoRecogido = null;
     public KeyCode keyDrop = KeyCode.E;
-    public float TEspera = 0.3f;
+    public float TEspera = 1.0f;
     private float TRestante = 0f;
     private bool UpAWall = false;
     private bool objectPicked = false;
