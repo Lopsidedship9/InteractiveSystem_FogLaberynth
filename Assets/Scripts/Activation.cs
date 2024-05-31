@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Activation : MonoBehaviour
 {
-    private Lever lever; // Reference to the Lever script
+    public ButtonLeverActivation lever; // Reference to the Lever script
     private Vector3 originalPosition; // Store the original position of the object
     private Vector3 targetPosition; // Store the target position of the object
     private bool isMoving = false; // Track if the object is currently moving
@@ -14,7 +14,6 @@ public class Activation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lever = FindObjectOfType<Lever>(); // Find the Lever script in the scene
         originalPosition = new Vector3(transform.position.x, 1f, transform.position.z); // Set the original y position to 1
         targetPosition = new Vector3(transform.position.x, -3f, transform.position.z); // Set the target y position to -3
         transform.position = originalPosition; // Ensure the wall starts at the original position
@@ -26,11 +25,11 @@ public class Activation : MonoBehaviour
     {
         if (lever != null) // Ensure lever reference is not null
         {
-            if (lever.palanca && !isMoving && transform.position != targetPosition) // If lever is activated and object is not moving and not at target
+            if (lever.active && !isMoving && transform.position != targetPosition) // If lever is activated and object is not moving and not at target
             {
                 StartCoroutine(MoveObject(originalPosition, targetPosition)); // Start moving the object to the target position
             }
-            else if (!lever.palanca && !isMoving && transform.position != originalPosition) // If lever is deactivated and object is not moving and not at original
+            else if (!lever.active && !isMoving && transform.position != originalPosition) // If lever is deactivated and object is not moving and not at original
             {
                 StartCoroutine(MoveObject(targetPosition, originalPosition)); // Start moving the object back to the original position
             }

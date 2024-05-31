@@ -2,28 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lever : MonoBehaviour
+public class ButtonLeverActivation : MonoBehaviour
 {
     // Start is called before the first frame update
     
-    public bool palanca = false;
-    
-    void Start()
-    {
-        
-    }
+    public bool active = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void OnTriggerEnter(Collider other)
     {
         
         if (other.gameObject.CompareTag("Player"))
         {
-            palanca = true;
+            active = true;
         }
     }
     
@@ -32,7 +22,7 @@ public class Lever : MonoBehaviour
         
         if (other.gameObject.CompareTag("Player"))
         {
-            palanca = false;
+            active = false;
         }
     }
 }

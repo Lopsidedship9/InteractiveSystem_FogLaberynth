@@ -2653,6 +2653,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b27d6f1693e64afe89f2076bb91dee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button1: {fileID: 872290398}
+  button2: {fileID: 706782010}
   movementSpeed: 2
 --- !u!82 &265948642
 AudioSource:
@@ -3300,7 +3302,7 @@ GameObject:
   - component: {fileID: 335544435}
   - component: {fileID: 335544438}
   m_Layer: 0
-  m_Name: Lever 1
+  m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3392,10 +3394,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 335544433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7666be45158be4a70873212311b743c5, type: 3}
+  m_Script: {fileID: 11500000, guid: c2be0972973534a25bd523f7c8a588fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palanca: 0
+  active: 0
 --- !u!1001 &342205625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6330,7 +6332,7 @@ GameObject:
   - component: {fileID: 706782011}
   - component: {fileID: 706782010}
   m_Layer: 0
-  m_Name: Lever 2 (1)
+  m_Name: Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6363,7 +6365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2be0972973534a25bd523f7c8a588fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palanca1: 0
+  active: 0
 --- !u!65 &706782011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7476,7 +7478,7 @@ GameObject:
   - component: {fileID: 872290399}
   - component: {fileID: 872290398}
   m_Layer: 0
-  m_Name: Lever 2
+  m_Name: Button 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7506,10 +7508,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 872290396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d629c2a7d906e45d1a6d22acf5ed9fc5, type: 3}
+  m_Script: {fileID: 11500000, guid: c2be0972973534a25bd523f7c8a588fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palanca2: 0
+  active: 0
 --- !u!65 &872290399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8686,7 +8688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ecb597b978b54c42b8b540f74efc3c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDuration: 1
+  lever: {fileID: 335544438}
+  moveDuration: 1.5
 --- !u!114 &994328132
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3377,10 +3377,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 335544433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7666be45158be4a70873212311b743c5, type: 3}
+  m_Script: {fileID: 11500000, guid: c2be0972973534a25bd523f7c8a588fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palanca: 0
+  active: 0
 --- !u!1001 &342205625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8385,6 +8385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ecb597b978b54c42b8b540f74efc3c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lever: {fileID: 0}
   moveDuration: 2
 --- !u!1001 &995418991
 PrefabInstance:
