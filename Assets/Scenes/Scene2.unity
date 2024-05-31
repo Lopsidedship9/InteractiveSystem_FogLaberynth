@@ -16754,7 +16754,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 082014f983b92f64492a4335491423c2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.02
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16970,7 +16970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkClip: {fileID: 8300000, guid: 26c643d84e7afa14883f4a2fb8ec32b9, type: 3}
   stoneWallClip: {fileID: 8300000, guid: 158a4f0e34d389a41ac58e39237b278d, type: 3}
-  explosionWoodClip: {fileID: 0}
+  explosionWoodClip: {fileID: 8300000, guid: 70d257e78a6f4974c81eaee6e6ee46e5, type: 3}
 --- !u!4 &1990771250
 Transform:
   m_ObjectHideFlags: 0

@@ -32,9 +32,9 @@ public class DisapearWoodRotateLever : MonoBehaviour
 
             if (rotationTimeElapsed >= TEspera) 
             {
-                soundManager.PlayExplosionWoodSound();
                 if (isRotated == true)//Sabemos que si esta arriba la palanca el muro esta arriba tb.
                 {
+                    soundManager.PlayExplosionWoodSound();
                     DisapearWoodMovementScript.DestroyWood();
                 }
                 else
