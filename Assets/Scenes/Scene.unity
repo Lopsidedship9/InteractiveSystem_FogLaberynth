@@ -7921,6 +7921,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 607011741070466003, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
+      propertyPath: m_RendererPriority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 607011741070466003, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+=======
+>>>>>>> parent of df2045c (Decals first scene)
     - target: {fileID: 919132149155446097, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
       propertyPath: m_Name
       value: model
@@ -7937,6 +7948,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 7812342237256117682, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
+      propertyPath: m_RendererPriority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812342237256117682, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 1
+      objectReference: {fileID: 0}
+=======
+>>>>>>> parent of df2045c (Decals first scene)
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b44db482e1e872348b68d6a848e1f04a, type: 3}
 --- !u!1 &948919306 stripped
