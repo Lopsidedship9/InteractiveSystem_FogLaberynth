@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7561188520060481059
+--- !u!114 &-720608544480514371
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material 1
+  m_Name: Dragon Decal
   m_Shader: {fileID: 4800000, guid: 1d64af84bdc970c4fae0c1e06dd95b73, type: 3}
   m_ShaderKeywords: _COLORMAP _DISABLE_SSR_TRANSPARENT _MATERIAL_AFFECTS_ALBEDO _MATERIAL_AFFECTS_MASKMAP
     _MATERIAL_AFFECTS_NORMAL _NORMALMAP_TANGENT_SPACE
@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 88a7f41b0b4804641b77825cd8c37759, type: 3}
+        m_Texture: {fileID: 2800000, guid: 626f9748023c790468a0abdbeb92461f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
