@@ -11,7 +11,7 @@ public enum Estado
 
 public class RotateLever : MonoBehaviour
 {
-    private bool isRotated = false; //Dira si ya ha rotado o si esta en la posicion inicial
+    public bool isRotated = false; //Dira si ya ha rotado o si esta en la posicion inicial
     public float TEspera = 1.0f;
     private Estado needRotation = Estado.Stop;
     private float targetRotation = 0f; //Inicialiaz la variable donde guardaremos la posicion objetivo
@@ -67,5 +67,10 @@ public class RotateLever : MonoBehaviour
             isRotating = true;
             rotationTimeElapsed = 0f; // Resetea el tiempo de rotacion
         }
+    }
+
+    public void NoMore()
+    {
+        noMore = true;
     }
 }

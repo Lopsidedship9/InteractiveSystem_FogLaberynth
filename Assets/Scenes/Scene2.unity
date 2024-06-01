@@ -1618,7 +1618,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Name
-      value: Decal Projector (5)
+      value: Tree Decal Projector
       objectReference: {fileID: 0}
     - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Material
@@ -2318,7 +2318,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Name
-      value: Decal Projector (4)
+      value: Circle Decal Projector
       objectReference: {fileID: 0}
     - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Material
@@ -2802,6 +2802,10 @@ PrefabInstance:
     - target: {fileID: 2575938327731363396, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Lever_Prefab (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Swan Lever
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
@@ -6900,6 +6904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Vines Lever
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
 --- !u!4 &843767554 stripped
@@ -7891,6 +7899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Dragon Lever
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
 --- !u!4 &956022555 stripped
@@ -8583,6 +8595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Two branches Lever
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
 --- !u!4 &1008158367 stripped
@@ -8909,6 +8925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1048053383}
+  - component: {fileID: 1048053384}
   m_Layer: 0
   m_Name: Levers combination
   m_TagString: Untagged
@@ -8938,6 +8955,19 @@ Transform:
   m_Father: {fileID: 2098427487}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1048053384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048053382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af897cb7d54b2d5418ea17cffe7185a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SignSequenceManager: {fileID: 1641340074}
 --- !u!4 &1052705773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 920185536907591082, guid: a56ee97689a394bd3ba28aa1fb23bbd4, type: 3}
@@ -9045,6 +9075,10 @@ PrefabInstance:
     - target: {fileID: 2575938327731363396, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Lever_Prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Circle Lever
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
@@ -10629,7 +10663,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Name
-      value: Decal Projector (2)
+      value: Fenix Decal Projector
       objectReference: {fileID: 0}
     - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Material
@@ -10980,6 +11014,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2098427487}
     m_Modifications:
+    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1577609632647162967, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11086,18 +11132,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078037237241554317, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -13682,6 +13716,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2098427487}
     m_Modifications:
+    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1577609632647162967, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13788,18 +13834,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078037237241554317, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -13976,6 +14010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1641340073}
+  - component: {fileID: 1641340074}
   m_Layer: 0
   m_Name: Decals Combination Signs Sequence
   m_TagString: Untagged
@@ -14003,6 +14038,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1641340074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641340072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc1c7b266f77ce478b443f9ca85d7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1659653270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14550,7 +14597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ff745d5248af94690a5d6cbfe45c9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 1990771249}
   movementThreshold: 0.5
 --- !u!4 &1702394250 stripped
 Transform:
@@ -14899,6 +14946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Fenix Lever
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
 --- !u!4 &1789940054 stripped
@@ -15029,6 +15080,10 @@ PrefabInstance:
     - target: {fileID: 2575938327731363396, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Lever_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Tree Lever
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
@@ -16055,7 +16110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Name
-      value: Decal Projector (3)
+      value: Dragon Decal Projector
       objectReference: {fileID: 0}
     - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Material
@@ -16379,7 +16434,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Name
-      value: Decal Projector
+      value: Swan Decal Projector
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Material
@@ -17298,6 +17357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Name
+      value: Flowers Lever
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
 --- !u!4 &2028397043 stripped
@@ -17371,7 +17434,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Name
-      value: Decal Projector (1)
+      value: Vines Decal Projector
       objectReference: {fileID: 0}
     - target: {fileID: 4767941084657740126, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
       propertyPath: m_Material
