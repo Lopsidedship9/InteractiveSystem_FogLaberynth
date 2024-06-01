@@ -6,6 +6,7 @@ using UnityEngine.Rendering.HighDefinition;
 public class SignSequenceManager : MonoBehaviour
 {
     private DecalProjectorInfo[] decalProjectorsInfo;
+    public WallsDownManager WallsDownManager;
 
     // Enum to represent the state of each DecalProjector
     public enum DecalState
@@ -102,5 +103,6 @@ public class SignSequenceManager : MonoBehaviour
         {
             decalProjectorsInfo.projector.enabled = true;
         }
+        WallsDownManager.StartWallsDownProcess();
     }
 }

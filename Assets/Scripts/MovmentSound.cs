@@ -20,7 +20,7 @@ public class MovmentSound : MonoBehaviour
     {
         currentPosition = transform.position;
         distanceMoved = Vector3.Distance(currentPosition, lastPosition);
-        if (distanceMoved > movementThreshold)
+        if (distanceMoved >= movementThreshold)
         {
             if (!sonidoReproduciendose)
             {

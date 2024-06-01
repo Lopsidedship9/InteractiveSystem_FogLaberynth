@@ -114,8 +114,19 @@ public class SignLeverCombinationManager : MonoBehaviour
             if (!leverScript.isRotated)
             {
                 leverScript.StartRotation();
-                leverScript.NoMore();
             }
+
+            // Start the coroutine for the delay before calling NoMore
+            StartCoroutine(CallNoMoreWithDelay(leverScript, 1.0f));
         }
+    }
+
+    private IEnumerator CallNoMoreWithDelay(RotateLever leverScript, float delay)
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        // Call the NoMore method
+        leverScript.NoMore();
     }
 }

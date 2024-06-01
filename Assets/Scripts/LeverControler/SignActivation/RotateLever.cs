@@ -13,7 +13,7 @@ public class RotateLever : MonoBehaviour
 {
     public bool isRotated = false; //Dira si ya ha rotado o si esta en la posicion inicial
     public float TEspera = 1.0f;
-    private Estado needRotation = Estado.Stop;
+    //private Estado needRotation = Estado.Stop;
     private float targetRotation = 0f; //Inicialiaz la variable donde guardaremos la posicion objetivo
     private bool isRotating = false; // Controla si esta rotando para no hacer nada mas
     private float initialRotation;
@@ -37,7 +37,7 @@ public class RotateLever : MonoBehaviour
             if (rotationTimeElapsed >= TEspera) 
             {
                 isRotating = false;
-                needRotation = Estado.Stop;
+                //needRotation = Estado.Stop;
                 rotationTimeElapsed = 0f;
                 if(oneRotation)
                 {
@@ -55,12 +55,12 @@ public class RotateLever : MonoBehaviour
             initialRotation = transform.eulerAngles.x;
             if (isRotated)
             {
-                needRotation = Estado.NegativeR;
+                //needRotation = Estado.NegativeR;
                 targetRotation = initialRotation - 90f;
             }
             else
             {
-                needRotation = Estado.PositiveR;
+                //needRotation = Estado.PositiveR;
                 targetRotation = initialRotation + 90f;
             }
             isRotated = !isRotated;
