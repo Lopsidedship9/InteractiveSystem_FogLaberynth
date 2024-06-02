@@ -7,7 +7,7 @@ Brick:
 https://id.unity.com/en/conversations/cbeb3b5e-635b-4f09-9434-0f5a835ce476005f
 
 Wood Material:
-https://sketchfab.com/3d-models/wood-shingles-material-0c81b56c86304202ad6409a2eb909d90
+https://sketchfab.com/3d-models/wood-1533700516184d9d8350400ff67ac7d9
 
 Lanter:
 https://assetstore.unity.com/packages/3d/environments/historic/modular-medieval-lanterns-85527#reviews
@@ -18,7 +18,7 @@ https://sketchfab.com/3d-models/metal-eagle-claws-6b2186a5ac184db8a9c5564f5825b7
 Adventurer:
 https://assetstore.unity.com/packages/3d/characters/humanoids/humans/hunter-159973
 
-Lever & PilarBotton:
+Lever:
 https://assetstore.unity.com/packages/tools/physics/interactive-physical-door-pack-163249
 
 For the Fog we have take information with this video:
@@ -29,3 +29,7 @@ Background: https://pixabay.com/sound-effects/forest-jungle-nature-dark-atmo-615
 Moving wall: https://pixabay.com/es/sound-effects/push-stone-statue-2-204993/
 Steps adventurer: https://pixabay.com/es/sound-effects/concrete-footsteps-1-6265/
 Explosion: https://pixabay.com/es/sound-effects/explosion-47821/
+Magic Wosh: https://pixabay.com/es/sound-effects/magic-wand-6214/
+
+For the voice we have used an AI:
+https://www.naturalreaders.com/
