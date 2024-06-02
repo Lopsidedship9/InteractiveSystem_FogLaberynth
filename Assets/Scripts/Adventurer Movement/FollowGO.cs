@@ -19,9 +19,10 @@ public class FollowGO : MonoBehaviour
     public ParticleSystemForceField forceField;
     private float targetForceFieldSize = 60.0f;
     public float expansionDuration = 3f;
-
-    //Lamp fade
+    private bool music_end = false;
     public float moveDuration = 1.5f;
+    private bool ChangeScene = true;
+    public FinalScript FinalScript;
 
     void Start()
     {
@@ -100,8 +101,10 @@ public class FollowGO : MonoBehaviour
         else
         {
             if(!soundStopped)
+            {
                 soundManager.StopWalkingSound();
-            soundStopped = true;
+                soundStopped = true;
+            }
         }
     }
 
@@ -154,6 +157,12 @@ public class FollowGO : MonoBehaviour
             //Debug.Log(forceField.endRange);
             StartCoroutine(ChangeForceFieldSize());                
         }
+        if(other.CompareTag("FinalTrigger"))
+        {
+            ChangeScene = false;
+            StartCoroutine(ChangeForceFieldSize());
+            FinalScript.FinalAnimation();
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -164,7 +173,7 @@ public class FollowGO : MonoBehaviour
         }
     }
 
-    private IEnumerator ChangeForceFieldSize()
+    public IEnumerator ChangeForceFieldSize()
     {
         float startSize = forceField.endRange;
         float timeElapsed = 0;
@@ -180,7 +189,15 @@ public class FollowGO : MonoBehaviour
         //Debug.Log(forceField.endRange);
 
         yield return StartCoroutine(LampDisapear());
-        yield return StartCoroutine(Walk_out_animation());
+        if(ChangeScene)
+        {
+            yield return StartCoroutine(Walk_out_animation());
+        }
+        else
+        {
+            yield return StartCoroutine(Walk_out_animation_Final());
+        }
+       
     }
 
     private IEnumerator Walk_out_animation()
@@ -202,7 +219,29 @@ public class FollowGO : MonoBehaviour
         SceneManager.LoadScene("Scene2");
     }
 
-    private IEnumerator LampDisapear()
+    private IEnumerator Walk_out_animation_Final()
+    {
+        Vector3 new_pos = transform.position;
+
+        Vector3 direction = new Vector3(0f, 0f, -1.0f);
+        Animation.SetBool("IsWalking", true);
+
+        while (new_pos.z > 10.0f)
+        {
+            new_pos += direction * velocidad * Time.deltaTime;
+            transform.position = new_pos;
+            yield return null; // Espera hasta el siguiente frame
+        }
+        Animation.SetBool("IsWalking", false);
+        Destroy(gameObject);
+
+        //Destroy(gameObject);
+        //SceneManager.LoadScene("Scene2");
+        //Application.Quit(); Por si queremos hacer que se cierre el juego
+
+    }
+
+    public IEnumerator LampDisapear()
     {
         // Deactivate the lamp's Rigidbody component to allow it to move through walls
         lampRigidbody.isKinematic = true;
@@ -229,5 +268,7 @@ public class FollowGO : MonoBehaviour
 
         Destroy(lamp);
     }
+
+    
 }
 

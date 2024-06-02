@@ -64,7 +64,7 @@ public class SoundManager : MonoBehaviour
         explosionWoodSource.playOnAwake = false;
         leverSource.playOnAwake = false;
         buttonSource.playOnAwake = false;
-
+        
         StartCoroutine(EnableSoundAfterDelay());
     }
 

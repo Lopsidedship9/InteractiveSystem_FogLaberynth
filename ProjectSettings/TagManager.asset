@@ -11,6 +11,7 @@ TagManager:
   - Palanca
   - Lever
   - ChangeScene
+  - FinalTrigger
   layers:
   - Default
   - TransparentFX
