@@ -666,7 +666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 1990771249}
-  movementThreshold: 0.01
+  movementThreshold: 0.001
 --- !u!114 &47708851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9930,7 +9930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 1990771249}
-  movementThreshold: 0.01
+  movementThreshold: 0.001
 --- !u!114 &1209270858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12346,7 +12346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 1990771249}
-  movementThreshold: 0.01
+  movementThreshold: 0.001
 --- !u!114 &1460267196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17915,7 +17915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundManager: {fileID: 1990771249}
-  movementThreshold: 0.01
+  movementThreshold: 0.001
 --- !u!114 &1913809954
 MonoBehaviour:
   m_ObjectHideFlags: 0
