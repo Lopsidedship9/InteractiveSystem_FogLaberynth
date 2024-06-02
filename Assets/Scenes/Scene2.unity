@@ -15741,7 +15741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetivo: {fileID: 4533943978484243}
-  velocidad: 2
+  velocidad: 3
   adventurer_mesh: {fileID: 846771648}
   lamp: {fileID: 0}
   fog: {fileID: 0}
