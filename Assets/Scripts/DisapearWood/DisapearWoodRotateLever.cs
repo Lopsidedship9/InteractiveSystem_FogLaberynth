@@ -12,7 +12,7 @@ public class DisapearWoodRotateLever : MonoBehaviour
     private bool isRotating = false; // Controla si esta rotando para no hacer nada mas
     private float initialRotation;
     private float rotationTimeElapsed;
-    private bool oneRotation = false;
+    private bool oneRotation = true;
     private bool noMore = false; //Por si queremos hacer que solo se levante una vez
     public DisapearWoodMovement DisapearWoodMovementScript;
     public SoundManager soundManager;
@@ -37,10 +37,6 @@ public class DisapearWoodRotateLever : MonoBehaviour
                 {
                     soundManager.PlayExplosionWoodSound();
                     DisapearWoodMovementScript.DestroyWood();
-                }
-                else
-                {
-                    
                 }
                 isRotating = false;
                 //needRotation = Estado.Stop;

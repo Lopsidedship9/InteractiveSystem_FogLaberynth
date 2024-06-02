@@ -11273,7 +11273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2575938327731363396, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
-      value: Lever_Prefab (1)
+      value: Lever_Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 4483701321033782352, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_LocalPosition.x

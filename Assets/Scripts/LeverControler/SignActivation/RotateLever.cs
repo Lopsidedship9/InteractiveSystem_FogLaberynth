@@ -51,7 +51,7 @@ public class RotateLever : MonoBehaviour
     
     public void StartRotation()
     {
-        if (!isRotating)
+        if (!isRotating && noMore == false)
         {
             soundManager.PlayLeverSound();
             initialRotation = transform.eulerAngles.x;
@@ -73,6 +73,13 @@ public class RotateLever : MonoBehaviour
 
     public void NoMore()
     {
-        noMore = true;
+        if (isRotating)
+        {
+            oneRotation = true;
+        }
+        else
+        {
+            noMore = true;
+        }
     }
 }
