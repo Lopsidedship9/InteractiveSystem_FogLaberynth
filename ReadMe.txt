@@ -33,3 +33,13 @@ Magic Wosh: https://pixabay.com/es/sound-effects/magic-wand-6214/
 
 For the voice we have used an AI:
 https://www.naturalreaders.com/
+
+Initial Story:
+This story begins with an adventurer trying to return home with his pet eagles after going on adventures with his team. On the way back, the adventurer encountered an ancient wizard whom his team had faced before. The wizard trapped the adventurer in a labyrinth with a curse that blocked him from seeing more than a few centimeters ahead of him due to a dense fog.The eagles managed to escape the wizard's spell, and when they realized his friend's situation, they decided to search for a magical lantern to guide him to the exit.
+
+Final Story:
+Finally, thanks to his two precious pets, the adventurer was able to escape the labyrinth and break the spell. The adventurer tried to find the wizard to prevent him from bothering any more adventurers, but the wizard had already disappeared. So, the adventurer and his eagles were able to return home happily.
+
+Farewell:
+We hope you enjoyed the game, see you next time.
+
