@@ -2908,6 +2908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Swan Lever
@@ -7085,6 +7089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Vines Lever
@@ -7984,6 +7992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Dragon Lever
@@ -8761,6 +8773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Two branches Lever
@@ -9544,6 +9560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Circle Lever
@@ -16619,6 +16639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Fenix Lever
@@ -16754,6 +16778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Tree Lever
@@ -19089,6 +19117,7 @@ MonoBehaviour:
   explosionWoodClip: {fileID: 8300000, guid: 70d257e78a6f4974c81eaee6e6ee46e5, type: 3}
   leverClip: {fileID: 8300000, guid: 64fadee9ddd45471a9406adc44040334, type: 3}
   buttonClip: {fileID: 8300000, guid: 0e050267dedf74737bbcfc8ece3edfac, type: 3}
+  delay: 3
 --- !u!4 &1990771250
 Transform:
   m_ObjectHideFlags: 0
@@ -19415,6 +19444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7192081774081817826, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 1990771249}
     - target: {fileID: 8547448563377378517, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
       propertyPath: m_Name
       value: Flowers Lever
