@@ -9,6 +9,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip explosionWoodClip;
     public AudioClip leverClip;
     public AudioClip buttonClip;
+    public float delay = 3.0f;
 
     private AudioSource walkSource;
     private AudioSource explosionWoodSource;
@@ -18,7 +19,7 @@ public class SoundManager : MonoBehaviour
 
     private const int stoneWallChannels = 4;
     private Dictionary<int, float> stoneWallStartTimes;
-
+    private bool canPlaySounds = false;
     
 
     void Awake()
@@ -58,6 +59,19 @@ public class SoundManager : MonoBehaviour
         explosionWoodSource.loop = false;
         leverSource.loop = false;
         buttonSource.loop = false;
+
+        walkSource.playOnAwake = false;
+        explosionWoodSource.playOnAwake = false;
+        leverSource.playOnAwake = false;
+        buttonSource.playOnAwake = false;
+
+        StartCoroutine(EnableSoundAfterDelay());
+    }
+
+    IEnumerator EnableSoundAfterDelay()
+    {
+        yield return new WaitForSeconds(delay);
+        canPlaySounds = true;
     }
 
     public void PlayStoneWallSound()
@@ -111,7 +125,10 @@ public class SoundManager : MonoBehaviour
 
     public void PlayWalkingSound()
     {
+        if(canPlaySounds)
+        {
         walkSource.Play();
+        }
     }
 
     public void StopWalkingSound()
