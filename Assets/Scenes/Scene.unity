@@ -3369,7 +3369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 258537777}
 --- !u!1001 &342205625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6338,7 +6338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 258537777}
 --- !u!65 &706782011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7485,7 +7485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
-  soundManager: {fileID: 0}
+  soundManager: {fileID: 258537777}
 --- !u!65 &872290399
 BoxCollider:
   m_ObjectHideFlags: 0
