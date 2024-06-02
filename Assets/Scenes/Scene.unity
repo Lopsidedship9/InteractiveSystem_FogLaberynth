@@ -2575,6 +2575,8 @@ MonoBehaviour:
   walkClip: {fileID: 8300000, guid: 26c643d84e7afa14883f4a2fb8ec32b9, type: 3}
   stoneWallClip: {fileID: 8300000, guid: 158a4f0e34d389a41ac58e39237b278d, type: 3}
   explosionWoodClip: {fileID: 8300000, guid: 70d257e78a6f4974c81eaee6e6ee46e5, type: 3}
+  leverClip: {fileID: 8300000, guid: 64fadee9ddd45471a9406adc44040334, type: 3}
+  buttonClip: {fileID: 8300000, guid: 0e050267dedf74737bbcfc8ece3edfac, type: 3}
 --- !u!4 &258537778
 Transform:
   m_ObjectHideFlags: 0
@@ -3367,6 +3369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  soundManager: {fileID: 0}
 --- !u!1001 &342205625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6335,6 +6338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  soundManager: {fileID: 0}
 --- !u!65 &706782011
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7481,6 +7485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  soundManager: {fileID: 0}
 --- !u!65 &872290399
 BoxCollider:
   m_ObjectHideFlags: 0

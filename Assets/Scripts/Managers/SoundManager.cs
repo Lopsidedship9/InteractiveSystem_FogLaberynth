@@ -7,19 +7,28 @@ public class SoundManager : MonoBehaviour
     public AudioClip walkClip;
     public AudioClip stoneWallClip;
     public AudioClip explosionWoodClip;
+    public AudioClip leverClip;
+    public AudioClip buttonClip;
 
     private AudioSource walkSource;
     private AudioSource explosionWoodSource;
+    private AudioSource leverSource;
+    private AudioSource buttonSource;
     private AudioSource[] stoneWallSources;
 
     private const int stoneWallChannels = 4;
     private Dictionary<int, float> stoneWallStartTimes;
+
+    
 
     void Awake()
     {
         // Create AudioSources
         walkSource = gameObject.AddComponent<AudioSource>();
         explosionWoodSource = gameObject.AddComponent<AudioSource>();
+        buttonSource = gameObject.AddComponent<AudioSource>();
+        leverSource = gameObject.AddComponent<AudioSource>();
+        
 
         // Create an array for stone wall sources
         stoneWallSources = new AudioSource[stoneWallChannels];
@@ -37,12 +46,18 @@ public class SoundManager : MonoBehaviour
         // Assign AudioClips to AudioSources
         walkSource.clip = walkClip;
         explosionWoodSource.clip = explosionWoodClip;
+        leverSource.clip = leverClip;
+        buttonSource.clip = buttonClip;
 
         walkSource.volume = 2.0f;
         explosionWoodSource.volume = 0.5f;
+        leverSource.volume = 1.0f;
+        buttonSource.volume = 0.8f;
 
         walkSource.loop = true;
         explosionWoodSource.loop = false;
+        leverSource.loop = false;
+        buttonSource.loop = false;
     }
 
     public void PlayStoneWallSound()
@@ -113,4 +128,25 @@ public class SoundManager : MonoBehaviour
     {
         explosionWoodSource.Stop();
     }
+    
+    public void PlayButtonSound()
+    {
+        buttonSource.Play();
+    }
+
+    public void StopButtonSound()
+    {
+        buttonSource.Stop();
+    }
+    
+    public void PlayLeverSound()
+    {
+        leverSource.Play();
+    }
+
+    public void StopLeverSound()
+    {
+        leverSource.Stop();
+    }
+     
 }

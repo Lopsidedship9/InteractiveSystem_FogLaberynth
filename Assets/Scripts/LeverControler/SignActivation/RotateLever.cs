@@ -20,6 +20,7 @@ public class RotateLever : MonoBehaviour
     private float rotationTimeElapsed;
     public bool oneRotation = false;
     private bool noMore = false;
+    public SoundManager soundManager;
     void Start()
     {
         targetRotation = transform.eulerAngles.x; // Inicializa la rotacion objetivo
@@ -52,6 +53,7 @@ public class RotateLever : MonoBehaviour
     {
         if (!isRotating)
         {
+            soundManager.PlayLeverSound();
             initialRotation = transform.eulerAngles.x;
             if (isRotated)
             {

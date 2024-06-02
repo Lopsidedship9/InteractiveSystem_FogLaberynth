@@ -63,6 +63,7 @@ public class WallDownUpRotateLever : MonoBehaviour
     {
         if (!isRotating)
         {
+            soundManager.PlayLeverSound();
             initialRotation = transform.eulerAngles.x;
             if (isRotated)
             {

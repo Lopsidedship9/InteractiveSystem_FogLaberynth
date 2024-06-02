@@ -25,6 +25,7 @@ public class DisapearWoodRotateLever : MonoBehaviour
     {
         if (isRotating && noMore == false)
         {
+            
             rotationTimeElapsed += Time.deltaTime;
             float rotationFraction = rotationTimeElapsed / TEspera; //Calcula las particiones para el movimiento
             float newRotation = Mathf.LerpAngle(initialRotation, targetRotation, rotationFraction);
@@ -44,6 +45,7 @@ public class DisapearWoodRotateLever : MonoBehaviour
                 isRotating = false;
                 //needRotation = Estado.Stop;
                 rotationTimeElapsed = 0f;
+                //soundManager.StopLeverSound();
                 if(oneRotation)
                 {
                     noMore = true;
@@ -57,6 +59,7 @@ public class DisapearWoodRotateLever : MonoBehaviour
     {
         if (!isRotating)
         {
+            soundManager.PlayLeverSound();
             initialRotation = transform.eulerAngles.x;
             if (isRotated)
             {

@@ -4,25 +4,30 @@ using UnityEngine;
 
 public class ButtonLeverActivation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    
     public bool active = false;
+    public SoundManager soundManager;
 
     void OnTriggerEnter(Collider other)
     {
-        
         if (other.gameObject.CompareTag("Player"))
         {
-            active = true;
+            soundManager.PlayButtonSound();
+            StartCoroutine(ChangeActiveState(true));
         }
     }
-    
+
     void OnTriggerExit(Collider other)
     {
-        
         if (other.gameObject.CompareTag("Player"))
         {
-            active = false;
+            soundManager.PlayButtonSound();
+            StartCoroutine(ChangeActiveState(false));
         }
+    }
+
+    IEnumerator ChangeActiveState(bool newState)
+    {
+        yield return new WaitForSeconds(0.7f);
+        active = newState;
     }
 }
