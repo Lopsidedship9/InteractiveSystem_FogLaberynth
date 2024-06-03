@@ -43,6 +43,8 @@ Moving wall: https://pixabay.com/es/sound-effects/push-stone-statue-2-204993/
 Steps adventurer: https://pixabay.com/es/sound-effects/concrete-footsteps-1-6265/
 Explosion: https://pixabay.com/es/sound-effects/explosion-47821/
 Magic Wosh: https://pixabay.com/es/sound-effects/magic-wand-6214/
+Lever sound: https://pixabay.com/es/sound-effects/rattle1-107616/
+Buttons Sound: https://pixabay.com/es/sound-effects/palanca-70797/ (from second 9 to 10)
 
 For the voice we have used an AI:
 https://www.naturalreaders.com/
