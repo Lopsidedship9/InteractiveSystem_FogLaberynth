@@ -5522,7 +5522,7 @@ MonoBehaviour:
   cameras:
   - {fileID: 342261394}
   - {fileID: 2041817079}
-  enableTracking: 0
+  enableTracking: 1
   numberOfPlayers: 4
   numberOfBaseStations: 4
   screenToWorldPosTracking: 1
@@ -14278,6 +14278,7 @@ MonoBehaviour:
   forceField: {fileID: 1493997888}
   expansionDuration: 5
   moveDuration: 1.5
+  FinalScript: {fileID: 0}
 --- !u!82 &1698642637
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15334,7 +15335,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 0
+  traking: 1
 --- !u!65 &1845463459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16767,7 +16768,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 0
+  traking: 1
 --- !u!54 &1989040988
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -5086,7 +5086,7 @@ MonoBehaviour:
   cameras:
   - {fileID: 342261394}
   - {fileID: 2041817079}
-  enableTracking: 0
+  enableTracking: 1
   numberOfPlayers: 4
   numberOfBaseStations: 4
   screenToWorldPosTracking: 1
@@ -11233,7 +11233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351380245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 81.6, y: 4, z: 19.5}
+  m_LocalPosition: {x: 87.2, y: 4, z: 72.6}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4533943978484243}
@@ -11441,6 +11441,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2098427487}
     m_Modifications:
+    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1577609632647162967, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11547,18 +11559,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078037237241554317, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -14536,6 +14536,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2098427487}
     m_Modifications:
+    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1577609632647162967, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -14642,18 +14654,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9078037237241554317, guid: bd522e5a702f34f839475fe518ed05a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302438, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5809220570440302440, guid: a0164d9c476080e449c72cf58e7709ab, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -15602,7 +15602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698642630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.5, y: -0.25, z: 29.3}
+  m_LocalPosition: {x: 101.5, y: -0.25, z: 72.5}
   m_LocalScale: {x: 2.6575801, y: 2.6575801, z: 2.6575801}
   m_Children:
   - {fileID: 846771649}
@@ -16940,7 +16940,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 0
+  traking: 1
 --- !u!65 &1845463459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18815,7 +18815,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 0
+  traking: 1
 --- !u!54 &1989040988
 Rigidbody:
   m_ObjectHideFlags: 0
