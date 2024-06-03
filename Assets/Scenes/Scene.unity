@@ -1789,7 +1789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.7
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2668,7 +2668,6 @@ MonoBehaviour:
   button1: {fileID: 872290398}
   button2: {fileID: 706782010}
   movementSpeed: 2
-  decal: {fileID: 1009081073}
 --- !u!82 &265948642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7593,7 +7592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.399998
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7694,11 +7693,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
---- !u!1 &862229730 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
-  m_PrefabInstance: {fileID: 1891358752}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &867433356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
@@ -8312,7 +8306,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  decal: {fileID: 862229730}
+  lowerY: -2.8
+  upperY: 1
 --- !u!82 &948919308
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9106,11 +9101,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
   m_PrefabInstance: {fileID: 1819891545}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1009081073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
-  m_PrefabInstance: {fileID: 1081656615}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1018376209
 PrefabInstance:
@@ -14288,7 +14278,6 @@ MonoBehaviour:
   forceField: {fileID: 1493997888}
   expansionDuration: 5
   moveDuration: 1.5
-  FinalScript: {fileID: 0}
 --- !u!82 &1698642637
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17765,7 +17754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.4
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 920185536907591082, guid: 57774c25215b42e4192bf9b20a5ef5fe, type: 3}
       propertyPath: m_LocalPosition.y

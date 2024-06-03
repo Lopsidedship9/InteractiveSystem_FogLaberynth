@@ -680,7 +680,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  decal: {fileID: 0}
+  lowerY: -2.8
+  upperY: 1
 --- !u!4 &48543992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 920185536907591082, guid: a56ee97689a394bd3ba28aa1fb23bbd4, type: 3}
@@ -5039,11 +5040,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &600806040 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4767941084657740125, guid: 14212ef5865b26d40a786e09934e3796, type: 3}
-  m_PrefabInstance: {fileID: 1594603450}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &603593412
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,7 +5086,7 @@ MonoBehaviour:
   cameras:
   - {fileID: 342261394}
   - {fileID: 2041817079}
-  enableTracking: 1
+  enableTracking: 0
   numberOfPlayers: 4
   numberOfBaseStations: 4
   screenToWorldPosTracking: 1
@@ -7635,7 +7631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  decal: {fileID: 600806040}
+  lowerY: -2.8
+  upperY: 1
 --- !u!114 &948919309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10044,7 +10041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  decal: {fileID: 0}
+  lowerY: -2.8
+  upperY: 1
 --- !u!4 &1211366459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 920185536907591082, guid: a56ee97689a394bd3ba28aa1fb23bbd4, type: 3}
@@ -11235,7 +11233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351380245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 87.7, y: 4, z: 72.6}
+  m_LocalPosition: {x: 81.6, y: 4, z: 19.5}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4533943978484243}
@@ -12459,7 +12457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  decal: {fileID: 0}
+  lowerY: -2.8
+  upperY: 1
 --- !u!1 &1471137151
 GameObject:
   m_ObjectHideFlags: 0
@@ -15603,7 +15602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698642630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 102.6, y: -0.25, z: 72.5}
+  m_LocalPosition: {x: 80.5, y: -0.25, z: 29.3}
   m_LocalScale: {x: 2.6575801, y: 2.6575801, z: 2.6575801}
   m_Children:
   - {fileID: 846771649}
@@ -16941,7 +16940,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 1
+  traking: 0
 --- !u!65 &1845463459
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18027,7 +18026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  decal: {fileID: 0}
+  lowerY: -2.8
+  upperY: 1
 --- !u!1001 &1920464384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18815,7 +18815,7 @@ MonoBehaviour:
   keyDrop: 101
   TEspera: 1
   y_catch: 9
-  traking: 1
+  traking: 0
 --- !u!54 &1989040988
 Rigidbody:
   m_ObjectHideFlags: 0

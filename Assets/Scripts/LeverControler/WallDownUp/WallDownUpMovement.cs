@@ -5,15 +5,14 @@ using UnityEngine;
 public class WallDownUpMovement : MonoBehaviour
 {
     public float speed = 1.0f;         // Velocidad
-    private float lowerY = -4.0f;       // Limite inferior en Y
-    private float upperY = 1.0f;        // Limite superior en Y
+    public float lowerY = -4.0f;       // Limite inferior en Y
+    public float upperY = 1.0f;        // Limite superior en Y
     private bool moveDown = false;      // Direcciones del movimiento
     private bool moveUp = false;
     private Vector3 newposDown;
     private Vector3 newposUp;
     private Vector3 pos;
     private Collider objectCollider;
-    public GameObject decal;
 
     void Awake()
     {
@@ -32,10 +31,6 @@ public class WallDownUpMovement : MonoBehaviour
                 transform.position = new Vector3(pos.x, lowerY, pos.z);
                 objectCollider.enabled = false;
                 moveDown = false;
-                if (decal != null)
-                {
-                    decal.SetActive(false);
-                }
             }
             else
             {
@@ -51,10 +46,6 @@ public class WallDownUpMovement : MonoBehaviour
                 transform.position = new Vector3(pos.x, upperY, pos.z);
                 objectCollider.enabled = true;
                 moveUp = false;
-                if (decal != null)
-                {
-                    decal.SetActive(true);
-                }
             }
             else    
             {
