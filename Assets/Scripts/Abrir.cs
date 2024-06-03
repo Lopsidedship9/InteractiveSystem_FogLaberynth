@@ -10,6 +10,7 @@ public class Abrir : MonoBehaviour
     private bool both = false;
     private Vector3 targetPosition; // Target position for smooth movement
     public float movementSpeed = 2f; // Speed of movement
+    public GameObject decal; 
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,10 @@ public class Abrir : MonoBehaviour
             {
                 targetPosition += Vector3.right * 9f; // Move the object forward along the z-axis by 9 units
                 both = true; // Set both to true to indicate the object has moved forward
+                if (decal != null)
+                {
+                    Destroy(decal);
+                }
             }
         }
     }
