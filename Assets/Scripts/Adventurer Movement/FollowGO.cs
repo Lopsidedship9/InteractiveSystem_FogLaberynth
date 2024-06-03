@@ -19,7 +19,6 @@ public class FollowGO : MonoBehaviour
     public ParticleSystemForceField forceField;
     private float targetForceFieldSize = 60.0f;
     public float expansionDuration = 3f;
-    private bool music_end = false;
     public float moveDuration = 1.5f;
     private bool ChangeScene = true;
     public FinalScript FinalScript;

@@ -10,7 +10,7 @@ public class FinalScript : MonoBehaviour
 
     public AudioSource historySource;
     public AudioSource ambientSource;
-    public AudioSource magicDisappear;
+    public AudioSource magicDisappearSource;
     public AudioSource despedidaSource;
 
     private bool isPlaying = false;
@@ -19,7 +19,7 @@ public class FinalScript : MonoBehaviour
 
     void Start()
     {
-        if (magicDisappear == null)
+        if (magicDisappearSource == null)
         {
             Debug.LogWarning("Magic Disappear AudioSource not assigned.");
         }
@@ -33,6 +33,11 @@ public class FinalScript : MonoBehaviour
         {
             Debug.LogWarning("Ambient AudioSource not assigned.");
         }
+
+        if (despedidaSource == null)
+        {
+            Debug.LogWarning("Despedida AudioSource not assigned.");
+        }
     }
 
     public void FinalAnimation()
@@ -42,7 +47,7 @@ public class FinalScript : MonoBehaviour
             ambientSource.Stop();
         }
 
-        if (magicDisappear != null && magicDisappear.clip != null)
+        if (magicDisappearSource != null && magicDisappearSource.clip != null)
         {
             Invoke("PlaySound", 4.0f);
         }
@@ -55,9 +60,9 @@ public class FinalScript : MonoBehaviour
     void PlaySound()
     {
         HideAllObjects();
-        if (magicDisappear != null && magicDisappear.clip != null)
+        if (magicDisappearSource != null && magicDisappearSource.clip != null)
         {
-            magicDisappear.Play();
+            magicDisappearSource.Play();
             isPlaying = true;
             StartCoroutine(WaitForSoundToFinish());
         }
@@ -65,7 +70,7 @@ public class FinalScript : MonoBehaviour
 
     IEnumerator WaitForSoundToFinish()
     {
-        while (isPlaying && magicDisappear.isPlaying)
+        while (isPlaying && magicDisappearSource.isPlaying)
         {
             yield return null;
         }
@@ -80,7 +85,7 @@ public class FinalScript : MonoBehaviour
             yield return null;
         }
 
-        /*if (despedidaSource != null && despedidaSource.clip != null)
+        if (despedidaSource != null && despedidaSource.clip != null)
         {
             despedidaSource.Play();
             despedidaPlaing = true;
@@ -88,7 +93,7 @@ public class FinalScript : MonoBehaviour
         while (despedidaPlaing && despedidaSource.isPlaying)
         {
             yield return null;
-        }*/
+        }
         //Para la build
         Application.Quit(); 
         // Para editor de Unity
@@ -100,7 +105,7 @@ public class FinalScript : MonoBehaviour
 
     void Update()
     {
-        if (isPlaying && !magicDisappear.isPlaying)
+        if (isPlaying && !magicDisappearSource.isPlaying)
         {
             isPlaying = false;
         }
@@ -110,10 +115,10 @@ public class FinalScript : MonoBehaviour
             historyPlaing = false;
         }
         
-        /*if (despedidaSource && !despedidaSource.isPlaying)
+        if (despedidaSource && !despedidaSource.isPlaying)
         {
             despedidaPlaing = false;
-        }*/
+        }
     }
 
     public void HideAllObjects()
